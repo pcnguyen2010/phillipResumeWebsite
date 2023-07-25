@@ -47,3 +47,45 @@ a{
 li{
     line-height: 1.9em;
 }
+
+#container--main{
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.section-page{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#socials--list{
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 1em;
+    flex-wrap: wrap;
+}
+
+#socials--list a{
+    font-size: 0.9em;
+    color: var(--secondaryTextColor);
+    transition: 0.3s;
+}
+
+#socials--list a:hover{
+    color: var(--mainLinkColor);
+}    
+
+#qualifications--list{
+    list-style: none;
+}
+
+.line-break{
+    background-color: var(--mainBorderColor);
+    height: 1px;
+    margin-bottom: 1em;
+}
+
+.company{
+    display: flex;
+    justify-content: space-between;
+}
