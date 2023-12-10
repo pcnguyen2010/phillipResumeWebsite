@@ -19,13 +19,13 @@ pipeline{
   }
   post{
     always{
-
+      echo 'Will send email about this job'
     }
     sucess{
-
+      echo 'Job sucessfully executed'
     }
     failure{
-
+      echo 'Job fail.'
     }
   }
 }
