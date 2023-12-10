@@ -16,7 +16,7 @@ pipeline{
     }
     stage('test'){
       when{
-         express{
+         expression{
             env.BRANCH_NAME == 'main'  || env.BRANCH_NAME == 'develop'
          }
       }
