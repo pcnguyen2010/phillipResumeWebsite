@@ -24,6 +24,12 @@ pipeline{
         echo 'testing application'
       }
     }
+
+    stage('Email Notification'){
+      steps{
+        emailext body: 'This is just a test ', subject: 'testing sending email from jenkins', to: 'pcnguyen2010@gmail.com'
+      }  
+    }
   }
   post{
     always{
