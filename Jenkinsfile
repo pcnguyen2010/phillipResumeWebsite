@@ -29,7 +29,7 @@ pipeline{
     always{
       echo 'Will send email about this job'
     }
-    sucess{
+    success{
       echo 'Job sucessfully executed'
     }
     failure{
