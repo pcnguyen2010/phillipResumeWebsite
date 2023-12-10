@@ -7,9 +7,25 @@ pipeline{
       }
     }
     stage('test'){
+      when{
+         express{
+            env.BRANCH_NAME == 'main'  || env.BRANCH_NAME == 'develop'
+         }
+      }
       steps{
         echo 'testing application'
       }
+    }
+  }
+  post{
+    always{
+
+    }
+    sucess{
+
+    }
+    failure{
+
     }
   }
 }
