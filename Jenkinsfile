@@ -1,6 +1,14 @@
 pipeline{
   agent any
   stages{
+    stage('init'){
+      steps{
+        script{
+          gvScript = load "script.groovy"
+        }
+      }
+    }
+    
     stage('build'){
       steps{
         echo 'building application'
